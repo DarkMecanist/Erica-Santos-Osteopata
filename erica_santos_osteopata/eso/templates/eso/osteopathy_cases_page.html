@@ -2,9 +2,17 @@
 
 {% block main-content %}
 
-<h1>Osteopatia</h1>
+<h1>Casos Osteopatia</h1>
 
-<div>{{presentation_text.text}}</div>
+{% for case in osteopathy_cases %}
+
+<h2>{{case.title}}</h2>
+<div>{{case.description}}</div>
+<img src="{{case.image}}" alt="">
+
+{% endfor %}
+
+
 
 {% endblock %}
 
