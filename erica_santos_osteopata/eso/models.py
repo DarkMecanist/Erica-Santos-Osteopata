@@ -8,6 +8,7 @@ class TextPresentation(models.Model):
 class Opinion(models.Model):
     author = models.TextField(max_length=40)
     post = models.TextField(max_length=300)
+    date = models.DateField()
     is_valid = models.BooleanField(default=False)
 
 
@@ -29,10 +30,11 @@ class OsteopathyHistory(models.Model):
 
 class Appointment(models.Model):
     duration_min = models.IntegerField(default=60)
-    date = models.DateField()
     name = models.TextField()
     phone = models.TextField()
     email = models.TextField()
+    date = models.DateField()
+    time = models.TimeField()
     description = models.TextField()
 
 

@@ -6,5 +6,15 @@
 
 <div>{{presentation_text.text}}</div>
 
+<div id="opinion-carousel">
+    <div id="opinion-container" class="opinion-container">
+        {% for opinion in opinions %}
+            {% if opinion.is_valid %}
+                <div class="opinion"><div class="opinion-text">"{{opinion.post}}"</div><div class="opinion-author">{{opinion.author}}</div></div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
 {% endblock %}
 
