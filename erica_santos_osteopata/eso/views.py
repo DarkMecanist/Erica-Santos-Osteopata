@@ -1,7 +1,10 @@
 from django.shortcuts import render, get_object_or_404
-from .models import TextPresentation, Opinion, OsteopathyAbout, OsteopathyCase, OsteopathyHistory, AppointmentsDescription
-from .backend import insert_calendar_event
+from django.http import JsonResponse
+from .models import TextPresentation, Opinion, OsteopathyAbout, OsteopathyCase, OsteopathyHistory,\
+    AppointmentsDescription, AccountInformation
+from .backend import GoogleCalendar, Gmail
 import datetime
+import os
 
 APPOINTMENT_DURATION_MIN = 60
 
@@ -40,30 +43,53 @@ def scheduling_page(request):
     context = {"appointments_description": appointments_description}
 
     if request.method == "POST" and request.POST.get("form") == 'appointment':
-        summary = "Consulta: " + request.POST.get("name") + " - " + request.POST.get("phone")
-        date_requested = datetime.datetime.now().strftime("%d/%m/%Y, %H:%M:%S")
-        description = "Nome: " + request.POST.get("name") + "\nTel: " + request.POST.get("phone") + "\nEmail: " + request.POST.get("email") + "\nSubmetido a: " + date_requested + "\nRazão: " + request.POST.get("description")
-        start_datetime = datetime.datetime(int(request.POST.get("year")), int(request.POST.get("month")), int(request.POST.get("day")), int(request.POST.get("hour")), int(request.POST.get("minutes")))
-        end_datetime = start_datetime + datetime.timedelta(minutes=APPOINTMENT_DURATION_MIN)
+        try:
+            summary = "Consulta: " + request.POST.get("name") + " - " + request.POST.get("phone")
+            date_requested = datetime.datetime.now().strftime("%d/%m/%Y, %H:%M:%S")
+            description = "Nome: " + request.POST.get("name") + "\nTel: " + request.POST.get("phone") + "\nEmail: " + request.POST.get("email") + "\nSubmetido a: " + date_requested + "\nRazão: " + request.POST.get("description")
+            start_datetime = datetime.datetime(int(request.POST.get("year")), int(request.POST.get("month")), int(request.POST.get("day")), int(request.POST.get("hour")), int(request.POST.get("minutes")))
+            end_datetime = start_datetime + datetime.timedelta(minutes=APPOINTMENT_DURATION_MIN)
 
-        # print(summary)
-        # print(description)
-        # print(start_datetime)
-        # print(request.POST.get("name"))
-        # print(request.POST.get("phone"))
-        # print(request.POST.get("email"))
-        # print(request.POST.get("day"))
-        # print(request.POST.get("month"))
-        # print(request.POST.get("year"))
-        # print(request.POST.get("hour"))
-        # print(request.POST.get("minutes"))
-        # print(request.POST.get("description"))
-        #
-        insert_calendar_event(summary, description, start_datetime, end_datetime)
+            google_calendar = GoogleCalendar(api_version="v3")
+            google_calendar.insert_event(summary=summary, description=description, location="Clinica",
+                                         start_datetime=start_datetime, end_datetime=end_datetime,
+                                         attendee_emails=["jmoutinho94@gmail.com"])
 
-    if request.method == "POST" and request.POST.get("form") == 'opinion':
+            account_information = get_object_or_404(AccountInformation)
 
-        print(request.POST.get("name"))
-        print(request.POST.get("opinion"))
+            gmail = Gmail(account_email=account_information.google_account_email,
+                          account_password=account_information.google_account_password)
+            gmail.send_email(emails_to=[account_information.email_to], subject="Pedido de Agendamento",
+                             body=description)
+
+            return JsonResponse({"status": "successful"}, status=200)
+        except Exception:
+            return JsonResponse({"status": "failed"}, status=200)
 
     return render(request=request, template_name='eso/scheduling_page.html', context=context)
+
+
+def opinion_page(request):
+    if request.method == "POST" and request.POST.get("form") == 'opinion':
+        try:
+            opinion = Opinion(author=request.POST.get("name"), post=request.POST.get("opinion"),
+                              date=datetime.datetime.now(), is_valid=False)
+
+            opinion.save()
+
+            account_information = get_object_or_404(AccountInformation)
+            body = f"""
+                Nome: {request.POST.get("name")}
+                Opinião: {request.POST.get("opinion")}
+            """
+
+            gmail = Gmail(account_email=account_information.google_account_email,
+                          account_password=account_information.google_account_password)
+            gmail.send_email(emails_to=[account_information.email_to], subject="Opinião",
+                             body=body)
+
+            return JsonResponse({"status": "successful"}, status=200)
+        except Exception:
+            return JsonResponse({"status": "failed"}, status=200)
+
+    return render(request=request, template_name='eso/opinion_page.html')

@@ -40,3 +40,9 @@ class Appointment(models.Model):
 
 class AppointmentsDescription(models.Model):
     text = models.TextField()
+
+
+class AccountInformation(models.Model):
+    google_account_email = models.EmailField()
+    google_account_password = models.TextField()
+    email_to = models.EmailField()

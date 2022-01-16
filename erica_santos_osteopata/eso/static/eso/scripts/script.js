@@ -81,7 +81,16 @@ app.controller('mainCtrl', function ($scope, $http, $window) {
                         "form": "appointment"
             };
 
-            $ajaxUtils.sendPostRequest(data, "/marcacoes/");
+            let element_response = document.getElementById("request-response-appointment");
+
+            $scope.loading(document.getElementById("appointment-form-button-submit"), element_response);
+            $ajaxUtils.sendPostRequest(data, "/marcacoes/", function (response) {
+                if (response["status"] === "successful") {
+                    element_response.innerHTML = "<div class='response-message'>Pedido de marcação feito com sucesso</div>";
+                } else {
+                    element_response.innerHTML = "<div class='response-message'>Ocorreu um erro ao fazer o pedido de marcação</div>";
+                }
+            });
         } else {
             $window.alert("Existem campos inválidos ou vazios");
             $scope.highlightInvalidFields(invalid_elements, [elem_name, elem_phone, elem_email, elem_day, elem_month, elem_year, elem_hour, elem_minutes,
@@ -104,11 +113,20 @@ app.controller('mainCtrl', function ($scope, $http, $window) {
 
         if (invalid_elements.length === 0) {
             let data = {"name": elem_name.value,
-                        "post": elem_post.value,
+                        "opinion": elem_post.value,
                         "form": "opinion"
             };
 
-            $ajaxUtils.sendPostRequest(data, "/marcacoes/");
+            let element_response = document.getElementById("request-response-opinion");
+
+            $scope.loading(document.getElementById("opinion-form-button-submit"), element_response);
+            $ajaxUtils.sendPostRequest(data, "/opiniao/", function (response) {
+                if (response["status"] === "successful") {
+                    element_response.innerHTML = "<div class='response-message'>Opinião submetida com sucesso</div>";
+                } else {
+                    element_response.innerHTML = "<div class='response-message'>Ocorreu um erro ao submeter a opinião</div>";
+                }
+            });
         } else {
             $window.alert("Existem campos inválidos ou vazios");
             $scope.highlightInvalidFields(invalid_elements, [elem_name, elem_post]);
@@ -172,11 +190,16 @@ app.controller('mainCtrl', function ($scope, $http, $window) {
         }
     };
 
+    $scope.loading = function (element_to_replace, element_response) {
+        console.log(element_to_replace);
+        element_to_replace.remove();
+        angular.element(element_response).removeClass("hidden");
+    };
+
     function setActiveOpinion() {
         if (opinion_elements.length > 1) {
             angular.element(opinion_elements[0]).addClass("opinion-active");
-        } else {
-            console.log("No valid opinions")
+            setInterval(function () {$scope.switchOpinion("next")}, 5000);
         }
     }
 
@@ -189,6 +212,4 @@ app.controller('mainCtrl', function ($scope, $http, $window) {
     }
 
     setActiveOpinion();
-    setInterval(function () {$scope.switchOpinion("next")}, 5000);
-
 });

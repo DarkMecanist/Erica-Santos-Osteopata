@@ -150,6 +150,15 @@ h1 {
 
 }
 
+.hidden {
+    display: none !important;
+}
+
+.response-message {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
 
 /* MEDIA QUERIES */
 

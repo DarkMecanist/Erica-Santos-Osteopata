@@ -1,3 +1,4 @@
-from django.test import TestCase
+import os
 
-# Create your tests here.
+print(os.environ.get("EMAIl_USER"))
+print(os.environ.get("EMAIl_PASSWORD"))

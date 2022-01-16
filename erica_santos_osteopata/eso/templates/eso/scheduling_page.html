@@ -1,5 +1,7 @@
 {% extends "eso/base.html" %}
 
+{% load static %}
+
 {% block main-content %}
 
 <h1>Marcações</h1>
@@ -36,20 +38,11 @@
     </div>
 </form>
 <button class="standard-button" id="appointment-form-button-submit" ng-click="validateAppointmentForm()" name="appointment-form">Agendar Marcação</button>
+<div id="request-response-appointment" class="hidden">
+    <img src="{% static 'eso/media/ajax-loader.gif' %}" alt="loading...">
+</div>
 
-<h3>Já teve a sua consulta? Deixe-nos a sua opinião</h3>
-<form method="POST" name="opinion-form" action="/marcacoes/">
-    {% csrf_token %}
-    <div class="opinion-form-field">
-        <label for="opinion-form-name">Nome: </label>
-        <input type="text" id="opinion-form-name" name="name">
-    </div>
-    <div class="opinion-form-field">
-        <label for="opinion-form-post">Opinião: </label>
-        <input type="text" id="opinion-form-post" name="opinion">
-    </div>
-</form>
-<button class="standard-button" id="opinion-form-button-submit" ng-click="validateOpinionForm()" name="opinion-form">Submeter Opinião</button>
+<h3><a href="{% url 'opinion_page' %}">Já teve a sua consulta? Deixe-nos a sua opinião</a></h3>
 
 {% endblock %}
 

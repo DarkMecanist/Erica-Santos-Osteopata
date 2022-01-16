@@ -47,26 +47,27 @@
 
         if (responseHandler !== undefined) {
             if (file_upload) {
-            $.ajax({
-                headers: {"X-CSRFToken": csrftoken} ,
-                type: "POST",
-                url: url,
-                data: data_dict,
-                processData: false,
-                contentType: false,
-                }).done( function (data) {
-                    status = responseHandler(data)
-                });
-        } else {
-            $.ajax({
-                headers: {"X-CSRFToken": csrftoken} ,
-                type: "POST",
-                url: url,
-                data: data_dict,
-                }).done( function (data) {
-                    status = responseHandler(data)
-                });
-        }
+                $.ajax({
+                    headers: {"X-CSRFToken": csrftoken} ,
+                    type: "POST",
+                    url: url,
+                    data: data_dict,
+                    processData: false,
+                    contentType: false,
+                    }).done( function (data) {
+                        status = responseHandler(data)
+                    });
+            } else {
+                $.ajax({
+                    headers: {"X-CSRFToken": csrftoken} ,
+                    type: "POST",
+                    url: url,
+                    data: data_dict,
+                    }).done( function (data) {
+                        status = responseHandler(data)
+                    });
+            }
+            return status
         } else {
             if (file_upload) {
             $.ajax({
