@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2e104b4-cfbd-4d6b-afe8-2be6b3be155b" name="Default Changelist" comment="" />
+    <list default="true" id="b2e104b4-cfbd-4d6b-afe8-2be6b3be155b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,6 +133,7 @@
           <entry key="js" value="1" />
           <entry key="json" value="2" />
           <entry key="py" value="17" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -140,6 +143,7 @@
           <entry key="Image" value="2" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="17" />
         </counts>
       </usages-collector>
@@ -163,7 +167,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
@@ -174,6 +178,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -333,72 +342,6 @@
             <path>
               <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
               <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name="staticfiles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="FICHEIROS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -585,9 +528,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1073" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18993288" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18993288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -601,7 +543,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36879432" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36879432" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -899,6 +841,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
