@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2e104b4-cfbd-4d6b-afe8-2be6b3be155b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/media/email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/media/phone.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html" afterDir="false" />
-    </list>
+    <list default="true" id="b2e104b4-cfbd-4d6b-afe8-2be6b3be155b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -593,6 +585,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="1073" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18993288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
