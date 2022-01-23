@@ -17,6 +17,7 @@ body {
 
 a, a:hover {
     text-decoration: none;
+    color: #2E7044;
 }
 
 li {
@@ -90,6 +91,7 @@ li {
 #main-content {
     padding-top: 140px;
     font-size: 1.2em;
+    margin-bottom: 200px;
 }
 
 #contacts {
@@ -98,10 +100,52 @@ li {
     height: 140px;
     width: 100%;
     margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0;
+
 }
 
-#contacts ul {
+#contacts .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacts .footer-info-block{
+    align-self: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.footer-title {
+    font-size: 25px;
+    color: #fafaea;
+}
+
+.footer-list {
+    padding: 0;
     margin: 0;
+    display: flex;
+}
+
+.contact-column:nth-child(2) {
+    margin-left: 10px;
+}
+
+.contact-column a {
+    display: flex;
+    color: #fafaea;
+}
+
+.contact-column a div {
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.image-contacts {
+    width: 35px;
 }
 
 h1 {
@@ -146,8 +190,26 @@ h1 {
     padding: 5px 15px;
 }
 
-.opinion-text {
+#opinion-form-name {
+    margin-left: 35px;
+}
 
+#opinion-form-post {
+    width: 50%;
+    height: 150px;
+}
+
+.opinion-form-field {
+    display: flex;
+    align-items: center;
+}
+
+.opinion-input {
+    margin-left: 20px;
+}
+
+#contacts-opinion-link:hover {
+    font-weight: bold;
 }
 
 .hidden {

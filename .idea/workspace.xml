@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2e104b4-cfbd-4d6b-afe8-2be6b3be155b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erica_santos_osteopata/.temp/client_secret.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/media/email.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/media/phone.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/backend.py" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/backend.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/scripts/ajax-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/scripts/ajax-utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/scripts/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/scripts/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/scheduling_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/scheduling_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,17 +122,20 @@
     <session id="-657869380">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="PNG" value="1" />
           <entry key="css" value="2" />
-          <entry key="html" value="7" />
+          <entry key="html" value="9" />
+          <entry key="jpg" value="1" />
           <entry key="js" value="1" />
           <entry key="json" value="2" />
           <entry key="py" value="17" />
@@ -149,7 +144,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="7" />
+          <entry key="HTML" value="9" />
+          <entry key="Image" value="2" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="1" />
           <entry key="Python" value="17" />
@@ -157,16 +153,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="59" />
-          <entry key="html" value="194" />
+          <entry key="css" value="978" />
+          <entry key="html" value="780" />
           <entry key="js" value="896" />
           <entry key="py" value="1172" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="59" />
-          <entry key="HTML" value="195" />
+          <entry key="CSS" value="978" />
+          <entry key="HTML" value="781" />
           <entry key="JavaScript" value="895" />
           <entry key="Python" value="1172" />
         </counts>
@@ -175,97 +171,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/scripts/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
-              <folding>
-                <element signature="e#404#473#0" />
-                <element signature="e#539#610#0" />
-                <element signature="e#1426#1483#0" />
-                <element signature="e#1604#1662#0" />
-                <element signature="e#1676#1889#0" />
-                <element signature="e#1821#1879#0" />
-                <element signature="e#1904#1962#0" />
-                <element signature="e#2112#2167#0" />
-                <element signature="e#2324#2381#0" />
-                <element signature="e#2524#2580#0" />
-                <element signature="e#2700#2756#0" />
-                <element signature="e#2885#2944#0" />
-                <element signature="e#2989#3053#0" />
-                <element signature="e#4030#4157#0" />
-                <element signature="e#5115#5383#0" />
-                <element signature="e#5167#5228#0" />
-                <element signature="e#5284#5377#0" />
-                <element signature="e#5495#5681#0" />
-                <element signature="e#5531#5597#0" />
-                <element signature="e#5603#5675#0" />
-                <element signature="e#5732#7204#0" />
-                <element signature="e#6032#6208#0" />
-                <element signature="e#6095#6174#0" />
-                <element signature="e#6244#7198#0" />
-                <element signature="e#6396#6495#0" />
-                <element signature="e#6501#6578#0" />
-                <element signature="e#6744#6944#0" />
-                <element signature="e#6811#6902#0" />
-                <element signature="e#7621#7950#0" />
-                <element signature="e#7698#7944#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="146" column="1" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
+            <state relative-caret-position="224">
+              <caret line="211" column="21" selection-start-line="211" selection-start-column="21" selection-end-line="211" selection-end-column="21" />
               <folding>
                 <element signature="e#12#66#0" />
                 <element signature="e#73#105#0" />
-                <element signature="e#112#242#0" />
-                <element signature="e#255#285#0" />
-                <element signature="e#290#315#0" />
-                <element signature="e#325#454#0" />
-                <element signature="e#466#639#0" />
-                <element signature="e#660#682#0" />
-                <element signature="e#702#728#0" />
-                <element signature="e#741#762#0" />
-                <element signature="e#771#820#0" />
-                <element signature="e#833#894#0" />
-                <element signature="e#908#1000#0" />
-                <element signature="e#1012#1077#0" />
-                <element signature="e#1089#1133#0" />
-                <element signature="e#1147#1170#0" />
-                <element signature="e#1247#1359#0" />
-                <element signature="e#1374#1392#0" />
-                <element signature="e#1397#1561#0" />
-                <element signature="e#1581#1703#0" />
-                <element signature="e#1724#1915#0" />
-                <element signature="e#1926#2007#0" />
-                <element signature="e#2025#2051#0" />
-                <element signature="e#2084#2110#0" />
-                <element signature="e#2126#2130#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/scheduling_page.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -273,11 +187,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="66" />
+            <state relative-caret-position="252">
+              <caret line="76" column="80" lean-forward="true" selection-start-line="76" selection-start-column="59" selection-end-line="76" selection-end-column="80" />
               <folding>
+                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#iframe#0;n#div#2;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/scheduling_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="44" column="37" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -294,14 +229,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="82" column="54" lean-forward="true" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+            <state relative-caret-position="1003">
+              <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
               <folding>
                 <element signature="e#370#640#0" />
                 <element signature="e#683#890#0" />
                 <element signature="e#933#1183#0" />
                 <element signature="e#1228#1445#0" />
-                <marker date="1642354280521" expanded="true" signature="3458:4504" ph="..." />
               </folding>
             </state>
           </provider>
@@ -311,13 +245,12 @@
         <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="646">
-              <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="27" />
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="27" />
               <folding>
                 <element signature="e#73#98#0" />
                 <element signature="e#342#448#0" />
                 <element signature="e#491#599#0" />
                 <element signature="e#645#670#0" />
-                <marker date="1642343532049" expanded="true" signature="1064:1196" ph="..." />
               </folding>
             </state>
           </provider>
@@ -341,6 +274,9 @@
       <find>nav_items</find>
       <find>hi</find>
       <find>angu</find>
+      <find>contac</find>
+      <find>a</find>
+      <find>hover</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -354,7 +290,6 @@
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/osteopathy_cases_page.html" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/osteopathy_history_page.html" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/forms.py" />
-        <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/osteopathy_about_page.html" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/google.py" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/quickstart.py" />
@@ -367,14 +302,15 @@
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/backend.py" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/tests.py" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/scripts/ajax-utils.js" />
-        <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/admin.py" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/models.py" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/urls.py" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/scripts/script.js" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/views.py" />
-        <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html" />
         <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/scheduling_page.html" />
+        <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html" />
+        <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html" />
+        <option value="$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css" />
       </list>
     </option>
   </component>
@@ -385,10 +321,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="1071" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-10" />
+    <option name="y" value="1070" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -398,6 +334,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -408,18 +345,6 @@
             <path>
               <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
               <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name=".temp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
               <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -457,15 +382,6 @@
               <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
               <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
               <item name="eso" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
-              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
-              <item name="eso" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -475,35 +391,51 @@
               <item name="eso" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="eso" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
+              <item name="erica_santos_osteopata" type="462c0819:PsiDirectoryNode" />
+              <item name="staticfiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
+              <item name="FICHEIROS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ERICA SANTOS OSTEOPATA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ERICA SANTOS OSTEOPATA" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PROJETOS PYTHON/Projetos Trabalho/WEB APP LOGÍSTICA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SOFTWARE DEVELOPER PORTFOLIO" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\staticfiles" />
-      <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata" />
-      <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\eso\static\eso\media" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\PROJETOS\PROGRAMMING\PROJECTS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\.temp" />
       <recent name="D:\PROJETOS\PROGRAMMING\PROJECTS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\eso" />
       <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\staticfiles" />
       <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\eso\static\eso" />
       <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\eso" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PROJETOS\PROGRAMMING\PROJECTS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\eso\static\eso\media" />
+      <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\staticfiles" />
+      <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata" />
+      <recent name="D:\PROJETOS\ERICA SANTOS OSTEOPATA\erica_santos_osteopata\eso\static\eso\media" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -662,7 +594,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="1073" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18456376" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18993288" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -737,12 +669,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/FICHEIROS/141303450_1367819910236452_7632279434439195405_n.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FICHEIROS/141416989_324354415554149_1892206865644913243_n.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FICHEIROS/Capture.PNG">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/django/views/generic/base.py">
@@ -845,11 +771,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-264">
           <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#443#2024#0" />
-            <element signature="e#2074#5137#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -864,32 +785,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="60" column="23" lean-forward="true" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-          <folding>
-            <element signature="e#158#504#0" />
-            <element signature="e#195#249#0" />
-            <element signature="e#281#404#0" />
-            <element signature="e#410#498#0" />
-            <element signature="e#604#878#0" />
-            <element signature="e#697#777#0" />
-            <element signature="e#910#1554#0" />
-            <element signature="e#1007#1512#0" />
-            <element signature="e#1124#1498#0" />
-            <element signature="e#1333#1480#0" />
-            <element signature="e#1775#2180#0" />
-            <element signature="e#1800#2062#0" />
-            <element signature="e#2086#2164#0" />
-            <element signature="e#2553#3062#0" />
-            <element signature="e#2584#2851#0" />
-            <element signature="e#2605#2839#0" />
-            <element signature="e#2857#3052#0" />
-            <element signature="e#2878#3040#0" />
-            <element signature="e#3078#3123#0" />
-            <element signature="e#3311#3761#0" />
-            <element signature="e#3391#3755#0" />
-            <element signature="e#3487#3541#0" />
-            <element signature="e#3575#3657#0" />
-            <element signature="e#3675#3745#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -904,9 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -928,95 +820,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="146" column="1" selection-start-line="146" selection-start-column="1" selection-end-line="146" selection-end-column="1" />
-          <folding>
-            <element signature="e#12#66#0" />
-            <element signature="e#73#105#0" />
-            <element signature="e#112#242#0" />
-            <element signature="e#255#285#0" />
-            <element signature="e#290#315#0" />
-            <element signature="e#325#454#0" />
-            <element signature="e#466#639#0" />
-            <element signature="e#660#682#0" />
-            <element signature="e#702#728#0" />
-            <element signature="e#741#762#0" />
-            <element signature="e#771#820#0" />
-            <element signature="e#833#894#0" />
-            <element signature="e#908#1000#0" />
-            <element signature="e#1012#1077#0" />
-            <element signature="e#1089#1133#0" />
-            <element signature="e#1147#1170#0" />
-            <element signature="e#1247#1359#0" />
-            <element signature="e#1374#1392#0" />
-            <element signature="e#1397#1561#0" />
-            <element signature="e#1581#1703#0" />
-            <element signature="e#1724#1915#0" />
-            <element signature="e#1926#2007#0" />
-            <element signature="e#2025#2051#0" />
-            <element signature="e#2084#2110#0" />
-            <element signature="e#2126#2130#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/scripts/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="110" column="45" lean-forward="true" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
-          <folding>
-            <element signature="e#404#473#0" />
-            <element signature="e#539#610#0" />
-            <element signature="e#1426#1483#0" />
-            <element signature="e#1604#1662#0" />
-            <element signature="e#1676#1889#0" />
-            <element signature="e#1821#1879#0" />
-            <element signature="e#1904#1962#0" />
-            <element signature="e#2112#2167#0" />
-            <element signature="e#2324#2381#0" />
-            <element signature="e#2524#2580#0" />
-            <element signature="e#2700#2756#0" />
-            <element signature="e#2885#2944#0" />
-            <element signature="e#2989#3053#0" />
-            <element signature="e#4030#4157#0" />
-            <element signature="e#5115#5383#0" />
-            <element signature="e#5167#5228#0" />
-            <element signature="e#5284#5377#0" />
-            <element signature="e#5495#5681#0" />
-            <element signature="e#5531#5597#0" />
-            <element signature="e#5603#5675#0" />
-            <element signature="e#5732#7204#0" />
-            <element signature="e#6032#6208#0" />
-            <element signature="e#6095#6174#0" />
-            <element signature="e#6244#7198#0" />
-            <element signature="e#6396#6495#0" />
-            <element signature="e#6501#6578#0" />
-            <element signature="e#6744#6944#0" />
-            <element signature="e#6811#6902#0" />
-            <element signature="e#7621#7950#0" />
-            <element signature="e#7698#7944#0" />
-          </folding>
+        <state relative-caret-position="1428">
+          <caret line="110" column="45" selection-start-line="110" selection-start-column="45" selection-end-line="110" selection-end-column="45" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FICHEIROS/Capture.PNG">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FICHEIROS/141416989_324354415554149_1892206865644913243_n.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="82" column="54" lean-forward="true" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+        <state relative-caret-position="1003">
+          <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
           <folding>
             <element signature="e#370#640#0" />
             <element signature="e#683#890#0" />
             <element signature="e#933#1183#0" />
             <element signature="e#1228#1445#0" />
-            <marker date="1642354280521" expanded="true" signature="3458:4504" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1024,13 +852,12 @@
     <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="27" />
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="4" selection-end-line="46" selection-end-column="27" />
           <folding>
             <element signature="e#73#98#0" />
             <element signature="e#342#448#0" />
             <element signature="e#491#599#0" />
             <element signature="e#645#670#0" />
-            <marker date="1642343532049" expanded="true" signature="1064:1196" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1042,27 +869,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html">
+    <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/scheduling_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="66" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="329">
+          <caret line="44" column="37" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/opinion_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="102">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="70" selection-end-line="12" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/scheduling_page.html">
+    <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/templates/eso/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        <state relative-caret-position="252">
+          <caret line="76" column="80" lean-forward="true" selection-start-line="76" selection-start-column="59" selection-end-line="76" selection-end-column="80" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#iframe#0;n#div#2;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/erica_santos_osteopata/eso/static/eso/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="211" column="21" selection-start-line="211" selection-start-column="21" selection-end-line="211" selection-end-column="21" />
+          <folding>
+            <element signature="e#12#66#0" />
+            <element signature="e#73#105#0" />
+          </folding>
         </state>
       </provider>
     </entry>
