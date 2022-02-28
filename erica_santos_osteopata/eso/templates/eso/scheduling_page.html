@@ -6,6 +6,26 @@
 
 <h1>Marcações</h1>
 
+<h2>PREÇÁRIO</h2>
+<div>
+    <table></table>
+</div>
+
+<ul id="appointments-descriptions" class="list-with-decorators">
+    {% for appointment_description in appointments_descriptions %}
+        <li>{{appointment_description.text}}</li>
+    {% endfor %}
+</ul>
+
+<h2>NOTAS IMPORTANTES</h2>
+
+<ul id="appointments-important-notes" class="list-with-decorators">
+    {% for appointments_important_note in appointments_important_notes %}
+        <li>{{appointments_important_note.text}}</li>
+    {% endfor %}
+</ul>
+
+
 <div><b>Informação importante: </b>{{appointments_description.text}}</div>
 <form method="POST" name="appointment-form" action="/marcacoes/">
     {% csrf_token %}

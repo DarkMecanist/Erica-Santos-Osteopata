@@ -1,6 +1,6 @@
 ::selection {
-    color: #fafaea;
-    background-color: #2E7044;
+    color: #fafafa;
+    background-color: #4B7540;
 }
 
 html {
@@ -9,15 +9,20 @@ html {
 
 body {
     box-sizing: border-box;
-    background-color: #fafaea;
-    color: #2E7044;
+    background-color: #fafafa;
+    color: #4B7540;
     margin: 0;
+    font-family: 'Amiri', serif;
+    font-size: 1em;
+}
+
+pre {
     font-family: 'Amiri', serif;
 }
 
 a, a:hover {
     text-decoration: none;
-    color: #2E7044;
+    color: #4B7540;
 }
 
 li {
@@ -27,16 +32,16 @@ li {
 #navbar {
     position: fixed;
     display: block;
-    background-color: #2E7044;
+    background-color: #4B7540;
     width: 100%;
     height: 120px;
-    z-index: 5px;
+    z-index: 5;
 }
 
 .nav-item {
     display: grid;
     height: 40px;
-    background-color: #2E7044;
+    background-color: #4B7540;
     overflow: hidden;
     transition: all .2s linear;
     text-align: center;
@@ -68,9 +73,22 @@ li {
 
 #brand-name {
     float: left;
-    color: #fafaea;
+    color: #fafafa;
     font-size: 2.5em;
     margin: 30px 0 40px 10px;
+}
+
+#navbarToggle {
+    border-radius: 5px;
+    border: 3px solid #262626;
+    background-color: #fafafa;
+    padding: 0 5px;
+    width: 50px;
+    height: 50px;
+    /*position: static;*/
+    /*float: right;*/
+    margin-top: auto;
+    display: none;
 }
 
 .nav-menu {
@@ -85,7 +103,38 @@ li {
 }
 
 .nav-item a {
-    color: #fafaea;
+    color: #fafafa;
+}
+
+#nav-menu-expandable.expanded {
+    height: 380px;
+    opacity: 100%;
+
+}
+
+#nav-menu-expandable {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    width: 35%;
+    height: 0;
+    background-color: #4B7540;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .2s linear;
+    opacity: 0;
+}
+
+#nav-menu-expandable .nav-item {
+    /*align-self: center;*/
+    width: 100%;
+}
+
+.nav-item-separator {
+    width: 90%;
+    margin: 0 auto;
 }
 
 #main-content {
@@ -95,8 +144,8 @@ li {
 }
 
 #contacts {
-    background-color: #2E7044;
-    color: #fafaea;
+    background-color: #4B7540;
+    color: #fafafa;
     height: 140px;
     width: 100%;
     margin-top: 20px;
@@ -113,6 +162,12 @@ li {
 
 #contacts .footer-info-block{
     align-self: center;
+    text-align: center;
+}
+
+.footer-info-block a {
+    display: inline-block;
+    color: #fafafa;
 }
 
 .flex {
@@ -121,7 +176,7 @@ li {
 
 .footer-title {
     font-size: 25px;
-    color: #fafaea;
+    color: #fafafa;
 }
 
 .footer-list {
@@ -136,7 +191,7 @@ li {
 
 .contact-column a {
     display: flex;
-    color: #fafaea;
+    color: #fafafa;
 }
 
 .contact-column a div {
@@ -171,9 +226,8 @@ h1 {
     align-items: center;
     overflow-x: hidden;
     width: 100%;
-    height: 200px;
-    color: #fafaea;
-    background-color: #2E7044;
+    color: #fafafa;
+    background-color: #4B7540;
 }
 
 .opinion {
@@ -208,7 +262,7 @@ h1 {
     margin-left: 20px;
 }
 
-#contacts-opinion-link:hover {
+#contacts-opinion-link:hover, .footer-info-block a:hover, .contact-link:hover  {
     font-weight: bold;
 }
 
@@ -219,6 +273,41 @@ h1 {
 .response-message {
     font-weight: bold;
     font-size: 1.2em;
+}
+
+.scalable-img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#presentation-logo {
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#credentials {
+    text-align: center;
+    font-weight: bold;
+}
+
+#osteopathy_advantages li, #pediatric_osteopathy_reasons li, #specializations li .list-with-decorators{
+    list-style: circle;
+}
+
+#container-history {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#image_history {
+    width: 20%;
+    margin-right: 30px;
 }
 
 
@@ -243,6 +332,16 @@ h1 {
     .container {
         width: 893px;
     }
+
+    #nav-menu-regular {
+        display: none;
+    }
+
+    #navbarToggle {
+        display: inline-block;
+        float: right;
+        margin-top: 35px;
+    }
 }
 
 /********** Small devices only **********/
@@ -250,6 +349,34 @@ h1 {
     .container {
         width: 668px;
     }
+
+    #nav-menu-regular {
+        display: none;
+    }
+
+    #navbarToggle {
+        display: inline-block;
+        float: right;
+        margin-top: 35px;
+    }
+
+    #opinion-carousel {
+        width: 668px;
+    }
+    .opinion {
+        max-width: 668px;
+        min-width: 668px;
+    }
+
+    .footer-title, .contact-column a div {
+        font-size: 1em;
+    }
+
+    .footer-info-block a {
+        width: 150px;
+    }
+
+
 }
 
 /********** Extra small devices only **********/
@@ -257,11 +384,111 @@ h1 {
     .container {
         width: 380px;
     }
+
+    #nav-menu-regular {
+        display: none;
+    }
+
+    #navbarToggle {
+        display: inline-block;
+        float: right;
+        margin-top: 35px;
+    }
+
+    #nav-menu-expandable {
+        width: 100%;
+    }
+
+    #nav-menu-expandable.expanded {
+        height: 240px;
+    }
+
+    #opinion-carousel {
+        width: 380px;
+    }
+
+    .opinion {
+        max-width: 380px;
+        min-width: 380px;
+    }
+
+    .footer-title, .contact-column a div {
+        display: none;
+    }
+
+    .footer-info-block a {
+        width: 150px;
+    }
 }
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
     .container {
-        width: 429px;
+        width: 90%
+    }
+
+    #nav-menu-regular {
+        display: none;
+    }
+
+    #nav-menu-expandable {
+        width: 100%;
+    }
+
+    #nav-menu-expandable.expanded {
+        height: 280px;
+        opacity: 100%;
+    }
+
+    #navbarToggle {
+        display: inline-block;
+        float: right;
+        margin-top: 15px;
+    }
+
+    #navbar, #navbar .container {
+        height: 80px
+    }
+
+    #brand {
+        width: 50%;
+    }
+
+    #brand-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #brand-name {
+        font-size: 1.1em;
+    }
+
+     #main-content {
+        padding-top: 80px;
+    }
+
+
+    #contacts {
+        height: 80px;
+    }
+
+    .footer-title, .contact-column a div {
+        display: none;
+    }
+
+    .footer-info-block a {
+        width: 150px;
+    }
+
+    h1 {
+        width: 90%;
+    }
+
+    #opinion-carousel {
+        width: 280px;
+    }
+    .opinion {
+        max-width: 280px;
+        min-width: 280px;
     }
 }

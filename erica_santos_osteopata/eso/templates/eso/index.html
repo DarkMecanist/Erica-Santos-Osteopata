@@ -1,20 +1,30 @@
 {% extends "eso/base.html" %}
+{% load static %}
 
 {% block main-content %}
+    <img id="presentation-logo" src="{% static 'eso/media/logo_full.png' %}" alt="Logo">
+    <div id="credentials">{{presentation_text.credentials}}</div>
+    {% for paragraph in paragraphs %}
+        <p>{{paragraph.paragraph}}</p>
+        {% if forloop.counter0 == 3 %}
+            <ul id="specializations">
+                {% for specialization in specializations %}
+                    <li>{{specialization.specialization}}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endfor %}
 
-<h1>Osteopatia</h1>
-
-<div>{{presentation_text.text}}</div>
-
-<div id="opinion-carousel">
-    <div id="opinion-container" class="opinion-container">
-        {% for opinion in opinions %}
-            {% if opinion.is_valid %}
-                <div class="opinion"><div class="opinion-text">"{{opinion.post}}"</div><div class="opinion-author">{{opinion.author}}</div></div>
-            {% endif %}
-        {% endfor %}
+    {% if opinions.count > 0 %}
+        <div id="opinion-carousel">
+        <div id="opinion-container" class="opinion-container">
+            {% for opinion in opinions %}
+                {% if opinion.is_valid %}
+                    <div class="opinion"><div class="opinion-text">"{{opinion.post}}"</div><div class="opinion-author">{{opinion.author}}</div></div>
+                {% endif %}
+            {% endfor %}
+        </div>
     </div>
-</div>
-
+    {% endif %}
 {% endblock %}
 

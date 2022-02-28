@@ -15,6 +15,16 @@ app.controller('mainCtrl', function ($scope, $http, $window) {
        nav_item_expansive_element.classList.remove("expanded");
     };
 
+    $scope.navButtonActivate = function () {
+        let dropdown_nav = document.getElementById("nav-menu-expandable");
+
+        if (dropdown_nav.classList.contains("expanded")) {
+            $scope.hideNavMenu(dropdown_nav)
+        } else {
+            $scope.showNavMenu(dropdown_nav);
+        }
+    };
+
     $scope.validateAppointmentForm = function () {
         let elem_name = document.getElementById("appointment-form-name");
         let elem_phone = document.getElementById("appointment-form-phone");
@@ -191,7 +201,6 @@ app.controller('mainCtrl', function ($scope, $http, $window) {
     };
 
     $scope.loading = function (element_to_replace, element_response) {
-        console.log(element_to_replace);
         element_to_replace.remove();
         angular.element(element_response).removeClass("hidden");
     };
